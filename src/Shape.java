@@ -1,3 +1,5 @@
 public abstract class Shape {
-   abstract void printName();
-    }
+    default void printName(Shape shape){
+        System.out.println(shape.getName());
+   }
+}
